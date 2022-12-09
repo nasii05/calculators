@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Advanced calculator</h1>
+    <div id="app">
+      <div class="display">
+        <div id="inputs"></div>
+        <div id="result"></div>
+      </div>
+      <div class="btns">
+        <button class="btn utility" onclick="reset()">AC</button>
+        <button class="btn utility" onclick="undo()">C</button>
+        <button class="btn utility" onclick="calculatePercentage()">%</button>
+        <button class="btn operator" onclick="display('÷')">÷</button>
+
+        <button class="btn" onclick="display('7')">7</button>
+        <button class="btn" onclick="display('8')">8</button>
+        <button class="btn" onclick="display('9')">9</button>
+        <button class="btn operator" onclick="display('x')">x</button>
+
+        <button class="btn" onclick="display('4')">4</button>
+        <button class="btn" onclick="display('5')">5</button>
+        <button class="btn" onclick="display('6')">6</button>
+        <button class="btn operator" onclick="display('-')">-</button>
+
+        <button class="btn" onclick="display('1')">1</button>
+        <button class="btn" onclick="display('2')">2</button>
+        <button class="btn" onclick="display('3')">3</button>
+        <button class="btn operator" onclick="display('+')">+</button>
+
+        <button class="btn" onclick="display('0')">0</button>
+        <button class="btn" onclick="display('00')">00</button>
+        <button class="btn" onclick="display('.')">.</button>
+        <button class="btn operator" onclick="calculate()">=</button>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js" defer></script>
+</body>
+
+</html>
